@@ -1,0 +1,13 @@
+Problem Identification:
+Discord is a social media platform popular among millions of users worldwide, serving various purposes including content sharing, software development, and online communities. 
+Despite being popular, Discord's API, for inexperienced programmers, can be brutal to work with directly, in particular for complex web applications. 
+Developing a wrapper around the API can simplify and streamline the development process for developers regardless of skill level or experience, by offering offers a cleaner and more user-friendly way to interact with the API.
+At the current time of creating this project, there are only 2 or 3 API wrappers such as Discord.py and Hikari and Zenora.
+Although the use of Discord.py and Hikari can be annoying for web-based applications mainly due to their asynchronous nature and the utilisation of the asyncio library. 
+From personal experience, this can result in difficulties integrating it with other frameworks, such as Flask which was originally designed for synchronous request/response processing.
+Additionally, both libaries are designed specifically for Discord bots, which makes a wrapper purpose-built for web applications even more important.
+Resuto hopes to help developers by providing a simple and easy-to-use interface for accessing the REST API without the need for async/await (useful for bots dealing with multiple requests from users simultaneously).
+This will make it particularly useful for designing bot web dashboards and other non-async applications.
+It will also support OAuth features, simplifying the procedue of implementing authentication in applications.
+
+StakeHolders:
