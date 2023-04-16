@@ -11,3 +11,7 @@ This will make it particularly useful for designing bot web dashboards and other
 It will also support OAuth2 features, simplifying the procedue of implementing authentication in applications.
 
 StakeHolders:
+
+
+Problem recognition:
+The overall problem is finding a way of simplifying interactions with the discord REST API in python. There are many smaller problems within that statement, for instance which
