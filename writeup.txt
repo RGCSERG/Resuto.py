@@ -8,6 +8,6 @@ From personal experience, this can result in difficulties integrating it with ot
 Additionally, both libaries are designed specifically for Discord bots, which makes a wrapper purpose-built for web applications even more important.
 Resuto hopes to help developers by providing a simple and easy-to-use interface for accessing the REST API without the need for async/await (useful for bots dealing with multiple requests from users simultaneously).
 This will make it particularly useful for designing bot web dashboards and other non-async applications.
-It will also support OAuth features, simplifying the procedue of implementing authentication in applications.
+It will also support OAuth2 features, simplifying the procedue of implementing authentication in applications.
 
 StakeHolders:
