@@ -15,3 +15,46 @@ StakeHolders:
 
 Problem recognition:
 The overall problem is finding a way of simplifying interactions with the discord REST API in python. There are many smaller problems within that statement, for instance which
+
+
+
+
+
+
+
+
+Proposal:
+My proposal for the NEA A-level computer science coursework is an API wrapper for the discord REST API. API stands for application programming interface, and API defines a set of protocols,
+routines, and tools for building software and applications. The wrapper itself essentially acts as a layer of abstraction from the bare bones of working with the API, 
+taking away a lot of the complexity of working with the API for the developer, and providing a more dev-friendly experience when coding with the API. This application would be extremely useful for web developers
+who either want to save time and effort by using pre-built functions and classes, simultaneously avoiding the complexities of the underlying API or just streamlining the process of 
+authentication when dealing with the API. Some of the essential requirements for this project should be; Authorization(through oauth2), endpoint handling(classes that allow ease of access between the different endpoints),
+Error handling(handle errors that occur doing calls, for example, server-side, invalid input, as well as providing meaningful error messages[custom]),
+rate-limiting(enforced rate limits need to be abided to avoid abuse and to ensure stability, implementing retry logic where necessary), 
+pagination(data is returned in pages and dictionaries, the wrapper should handle this and allow users to iterate through data easily), 
+data structures(carrying on from pagination data returned from the API should be easy to understand and use providing the need for classes or other data structures to represent data),
+documentation, modularity(oop), consistency(in design and interface), security(encryption, token verification), and compatibility (should be regularly updated to comply with new updates to the API).
+I have already created some basic working models for the key requirements but as an example of modularity here's Zenora's working tree:
+
+zenora
+    api
+        userapi.py: holds UserAPI class + methods for interacting with Discord's user-related API endpoints
+        oauthapi.py: holds OAuthAPI class + methods for interacting with Discord's OAuth-related API endpoints
+    impl
+        userapi.py: implementation of the UserAPI class
+        oauthapi.py: implementation of the OAuthAPI class
+    models
+        snowflake.py: Snowflake class for handling Discord's Snowflake data type
+        user.py: User class for representing Discord user objects
+        connection.py: Connection class for representing Discord connection objects
+        integration.py: Integration class for representing Discord integration objects
+        channel.py: Channel class for representing Discord channel objects
+        oauth.py: OAuth class for representing Discord OAuth objects
+        guild.py: Guild class for representing Discord guild objects
+    utils
+        utility functions and classes
+    exceptions.py: Contains custom exception classes for Zenora
+    request.py: Request class for handling HTTP requests to the Discord API
+    client.py: APIClient class for interacting with the Discord API
+
+
