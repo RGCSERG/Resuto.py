@@ -58,3 +58,8 @@ zenora
     client.py: APIClient class for interacting with the Discord API
 
 
+Some limiting factors of the wrapper follow as such:
+Limited functionality (may not provide acess to all features of the bare API)
+compatibility issues (outdated methods)
+perfomance impacts (wrappers add additional layers of processing potentially hindering perfomance)
+dependancies (the wrapper may require mroe third party code to be able to run)
